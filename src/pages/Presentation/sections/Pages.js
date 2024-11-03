@@ -68,7 +68,7 @@ function Pages() {
           </MKTypography>
         </Grid>
       </Container>
-      <Container sx={{ mt: { xs: 8, lg: 16 } }}>
+      <Container sx={{ mt: { xs: 2, lg: 5 } }}>
         <Grid container spacing={3}>
           <Grid item xs={12} lg={9} sx={{ mt: 3, px: { xs: 0, lg: 8 } }}>
             <Grid container spacing={3}>

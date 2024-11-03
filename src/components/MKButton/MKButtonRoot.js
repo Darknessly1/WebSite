@@ -14,7 +14,7 @@ export default styled(Button)(({ theme, ownerState }) => {
   // styles for the button with variant="contained"
   const containedStyles = () => {
     // background color value
-    const backgroundValue = color === "white" ? dark.main : palette[color].main;
+    // const backgroundValue = color === "white" ? white.main : palette[color].main;
 
     // backgroundColor value when button is focused
     const focusedBackgroundValue = palette[color] ? palette[color].focus : white.focus;
@@ -60,12 +60,12 @@ export default styled(Button)(({ theme, ownerState }) => {
     }
 
     return {
-      background: backgroundValue,
+      // background: backgroundValue,
       color: colorValue,
       boxShadow: boxShadowValue,
 
       "&:hover": {
-        backgroundColor: backgroundValue,
+        // backgroundColor: backgroundValue,
         boxShadow: hoveredBoxShadowValue,
       },
 
@@ -77,7 +77,7 @@ export default styled(Button)(({ theme, ownerState }) => {
       },
 
       "&:disabled": {
-        backgroundColor: backgroundValue,
+        // backgroundColor: backgroundValue,
         color: focusedColorValue,
       },
     };

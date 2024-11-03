@@ -7,6 +7,7 @@ module.exports = {
     extend: {
       fontFamily: {
         mono: ['"Lucida Console"', '"Courier New"', 'monospace'], // Add your custom font family here
+        fantasy: ['fantasy'],
       },
     },
   },

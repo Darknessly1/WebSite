@@ -43,12 +43,19 @@ import image6 from "assets/images/bg-presentation.jpg";
 import image7 from "assets/images/bg2.jpg";
 import image8 from "assets/images/bg3.jpg";
 import image9 from "assets/images/team-2.jpg";
-import image10 from "assets/images/macbook.png";
+// import image10 from "assets/images/macbook.png";
 import Blogsfile from "components/Blogsfile";
 // import HorizontalTeamCard from "examples/Cards/TeamCards/HorizontalTeamCard";
 // import BackgroundBlogCard from "examples/Cards/BlogCards/BackgroundBlogCard";
 // import CenteredBlogCard from "examples/Cards/BlogCards/CenteredBlogCard";
 // import ImageSlider from "components/ImageGallery";
+
+import ArticleIcon from '@mui/icons-material/Article';
+import TerminalIcon from '@mui/icons-material/Terminal';
+import ComputerIcon from '@mui/icons-material/Computer';
+import MouseIcon from '@mui/icons-material/Mouse';
+import LanIcon from '@mui/icons-material/Lan';
+import { Link } from 'react-router-dom';
 
 function Presentation() {
 
@@ -72,39 +79,34 @@ function Presentation() {
 
     {
       src: image4,
-      title: "Image Title 3",
+      title: "Image Title 4",
       description: "Description for image 4.",
     },
 
     {
       src: image5,
-      title: "Image Title 3",
-      description: "Description for image 4.",
+      title: "Image Title 5",
+      description: "Description for image 5.",
     },
 
     {
       src: image6,
-      title: "Image Title 3",
-      description: "Description for image 5.",
-    },
-    {
-      src: image7,
-      title: "Image Title 3",
+      title: "Image Title 6",
       description: "Description for image 6.",
     },
     {
-      src: image8,
-      title: "Image Title 3",
+      src: image7,
+      title: "Image Title 7",
       description: "Description for image 7.",
     },
     {
-      src: image9,
-      title: "Image Title 3",
+      src: image8,
+      title: "Image Title 8",
       description: "Description for image 8.",
     },
     {
-      src: image10,
-      title: "Image Title 3",
+      src: image9,
+      title: "Image Title 9",
       description: "Description for image 9.",
     },
   ];
@@ -112,13 +114,13 @@ function Presentation() {
   const blogData = [
     {
       src: image4,
-      title: "Understanding React Lifecycle",
+      title: "First Blog",
       description: "A brief look into the lifecycle methods in React and how they can be utilized...",
       link: "/blogs/react-lifecycle",
     },
     {
       src: image5,
-      title: "Introduction to Tailwind CSS",
+      title: "Second Blog",
       description: "Discover how Tailwind CSS can streamline your styling process and boost productivity...",
       link: "/blogs/tailwind-introduction",
     },
@@ -139,8 +141,7 @@ function Presentation() {
         sticky
       />
       <MKBox
-        minHeight="120vh"
-        // hight = "300%"
+        minHeight="140vh"
         width="100%"
         sx={{
           hight: "100%",
@@ -152,17 +153,109 @@ function Presentation() {
         }}
       >
         <Container>
-          <Grid container item xs={20} lg={15} justifyContent="center">
+          <Grid container item xs={15} lg={16} justifyContent="center">
             <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 md:space-x-4 w-full">
               {/* Left Content */}
-              <div className="text-white w-full md:w-2/3 text-center md:text-left">
+              <div className="text-white  md:w-2/3 text-center md:text-left">
+                <h1 className="flex justify-center items-center text-6xl mb-10 mt-0">
+                  <ArticleIcon />
+                  <span className="font-fantasy ">
+                    Discover More Blogs
+                  </span>
+                </h1>
                 <Blogsfile blogs={blogData} />
+                <div className="flex justify-center items-center text-7xl mb-10 mt-0 space-x-8">
+                  <div className="flex flex-col items-center">
+                    <Link to="/terminal-page">
+                      <TerminalIcon
+                        sx={{
+                          color: 'rgba(255, 255, 255, 0.8)',
+                          backgroundColor: '#3a3a3a',
+                          padding: '12px',
+                          borderRadius: '50%',
+                          boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
+                          '&:hover': {
+                            color: '#1e88e5',
+                            transform: 'scale(1.1)',
+                            transition: 'transform 0.3s ease',
+                          },
+                        }}
+                      />
+                    </Link>
+                    <span className="text-sm mt-2 text-white">Terminal</span>
+                  </div>
+
+                  <div className="flex flex-col items-center">
+                    <Link to="/computer-page">
+                      <ComputerIcon
+                        sx={{
+                          color: 'rgba(255, 255, 255, 0.8)',
+                          backgroundColor: '#3a3a3a',
+                          padding: '12px',
+                          borderRadius: '50%',
+                          boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
+                          '&:hover': {
+                            color: '#43a047',
+                            transform: 'scale(1.1)',
+                            transition: 'transform 0.3s ease',
+                          },
+                        }}
+                      />
+                    </Link>
+                    <span className="text-sm mt-2 text-white">Computer</span>
+                  </div>
+
+                  <div className="flex flex-col items-center">
+                    <Link to="/mouse-page">
+                      <MouseIcon
+                        sx={{
+                          color: 'rgba(255, 255, 255, 0.8)',
+                          backgroundColor: '#3a3a3a',
+                          padding: '12px',
+                          borderRadius: '50%',
+                          boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
+                          '&:hover': {
+                            color: '#f4511e',
+                            transform: 'scale(1.1)',
+                            transition: 'transform 0.3s ease',
+                          },
+                        }}
+                      />
+                    </Link>
+                    <span className="text-sm mt-2 text-white">Mouse</span>
+                  </div>
+                  <div className="flex flex-col items-center">
+                    <Link to="/mouse-page">
+                      <LanIcon
+                        sx={{
+                          color: 'rgba(255, 255, 255, 0.8)',
+                          backgroundColor: '#3a3a3a',
+                          padding: '12px',
+                          borderRadius: '50%',
+                          boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
+                          '&:hover': {
+                            color: '#f98a8a',
+                            transform: 'scale(1.1)',
+                            transition: 'transform 0.3s ease',
+                          },
+                        }}
+                      />
+                    </Link>
+                    <span className="text-sm mt-2 text-white">Lan</span>
+                  </div>
+                </div>
               </div>
 
               {/* Right Content */}
-              <div className="w-full md:w-1/3">
-                <ImageSlider images={images} />
+              <div className="w-full md:w-1/3 flex flex-col">
+                <div className="flex-1 h-30">
+                  <ImageSlider images={images} sliderHeight="300px" sliderWidth="100%" />
+                </div>
+                <div className="flex-1 h-40">
+                  <ImageSlider images={images} sliderHeight="300px" sliderWidth="100%" />
+                </div>
               </div>
+
             </div>
 
           </Grid>
@@ -180,13 +273,15 @@ function Presentation() {
           boxShadow: ({ boxShadows: { xxl } }) => xxl,
         }}
       >
-        <Information />
-        <Download />
-        <DesignBlocks />
-        <Pages />
         <Container sx={{ mt: 6 }}>
           <BuiltByDevelopers />
         </Container>
+        <Pages />
+
+        <Information />
+        <Download />
+        <DesignBlocks />
+
         <Container>
           <Grid container spacing={3}>
             <Grid item xs={12} lg={4}>
