@@ -26,7 +26,9 @@ import DefaultNavbarMobile from "examples/Navbars/DefaultNavbar/DefaultNavbarMob
 
 // Material Kit 2 React base styles
 import breakpoints from "assets/theme/base/breakpoints";
-import Button from "components/Button";
+// import Button from "components/Button";
+import TestButton from "components/Button";
+import Explore  from "@mui/icons-material/Explore";
 
 function DefaultNavbar({ brand, routes, transparent, light, sticky, relative, center }) {
   const [dropdown, setDropdown] = useState("");
@@ -508,7 +510,7 @@ function DefaultNavbar({ brand, routes, transparent, light, sticky, relative, ce
                 </MKButton>
               ))}
           </MKBox> */}
-          <Button />
+          <TestButton text="See More" icon={<Explore />}/>
           <MKBox
             display={{ xs: "inline-block", lg: "none" }}
             lineHeight={0}

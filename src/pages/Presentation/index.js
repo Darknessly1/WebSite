@@ -30,7 +30,7 @@ import routes from "routes";
 import footerRoutes from "footer.routes";
 
 // Images
-import bgImage from "assets/img.jpg";
+import bgImage from "assets/bgimg2.jpg";
 import ImageSlider from "components/ImageGallery";
 
 
@@ -44,6 +44,10 @@ import image7 from "assets/images/bg2.jpg";
 import image8 from "assets/images/bg3.jpg";
 import image9 from "assets/images/team-2.jpg";
 import image10 from "assets/images/macbook.png";
+import Blogsfile from "components/Blogsfile";
+// import HorizontalTeamCard from "examples/Cards/TeamCards/HorizontalTeamCard";
+// import BackgroundBlogCard from "examples/Cards/BlogCards/BackgroundBlogCard";
+// import CenteredBlogCard from "examples/Cards/BlogCards/CenteredBlogCard";
 // import ImageSlider from "components/ImageGallery";
 
 function Presentation() {
@@ -69,40 +73,56 @@ function Presentation() {
     {
       src: image4,
       title: "Image Title 3",
-      description: "Description for image 3.",
+      description: "Description for image 4.",
     },
 
     {
       src: image5,
       title: "Image Title 3",
-      description: "Description for image 3.",
+      description: "Description for image 4.",
     },
 
     {
       src: image6,
       title: "Image Title 3",
-      description: "Description for image 3.",
+      description: "Description for image 5.",
     },
     {
       src: image7,
       title: "Image Title 3",
-      description: "Description for image 3.",
+      description: "Description for image 6.",
     },
     {
       src: image8,
       title: "Image Title 3",
-      description: "Description for image 3.",
+      description: "Description for image 7.",
     },
     {
       src: image9,
       title: "Image Title 3",
-      description: "Description for image 3.",
+      description: "Description for image 8.",
     },
     {
       src: image10,
       title: "Image Title 3",
-      description: "Description for image 3.",
+      description: "Description for image 9.",
     },
+  ];
+
+  const blogData = [
+    {
+      src: image4,
+      title: "Understanding React Lifecycle",
+      description: "A brief look into the lifecycle methods in React and how they can be utilized...",
+      link: "/blogs/react-lifecycle",
+    },
+    {
+      src: image5,
+      title: "Introduction to Tailwind CSS",
+      description: "Discover how Tailwind CSS can streamline your styling process and boost productivity...",
+      link: "/blogs/tailwind-introduction",
+    },
+    // Add more blog entries as needed
   ];
 
 
@@ -132,12 +152,19 @@ function Presentation() {
         }}
       >
         <Container>
-          <Grid container item xs={12} lg={7} justifyContent="center" mx="auto">
-            <h1 className="text-bold text-8xl text-gray-200 font-mono font-family text-stroke">DISPARK</h1>
-            <ImageSlider images={images} />
-            <div>
+          <Grid container item xs={20} lg={15} justifyContent="center">
+            <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 md:space-x-4 w-full">
+              {/* Left Content */}
+              <div className="text-white w-full md:w-2/3 text-center md:text-left">
+                <Blogsfile blogs={blogData} />
+              </div>
 
+              {/* Right Content */}
+              <div className="w-full md:w-1/3">
+                <ImageSlider images={images} />
+              </div>
             </div>
+
           </Grid>
         </Container>
       </MKBox>
@@ -154,6 +181,7 @@ function Presentation() {
         }}
       >
         <Information />
+        <Download />
         <DesignBlocks />
         <Pages />
         <Container sx={{ mt: 6 }}>
@@ -204,7 +232,6 @@ function Presentation() {
           </Grid>
         </Container>
         <Testimonials />
-        <Download />
         {/* <MKBox pt={18} pb={6}>
           <Container>
             <Grid container spacing={3}>
