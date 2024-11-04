@@ -8,7 +8,7 @@ import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 import DefaultFooter from "examples/Footers/DefaultFooter";
 import FilledInfoCard from "examples/Cards/InfoCards/FilledInfoCard";
 
-import Information from "pages/Presentation/sections/Information";
+// import Information from "pages/Presentation/sections/Information";
 import DesignBlocks from "pages/Presentation/sections/DesignBlocks";
 import Pages from "pages/Presentation/sections/Pages";
 import Testimonials from "pages/Presentation/sections/Testimonials";
@@ -43,6 +43,8 @@ import MKSocialButton from "components/MKSocialButton";
 import MKTypography from "components/MKTypography";
 // import TransparentBlogCard from "examples/Cards/BlogCards/TransparentBlogCard";
 import Flipedimages from "components/Flipedimages";
+import Hidden from "components/Hidden";
+import Miltiimg from "components/Miltiimg";
 
 function Presentation() {
 
@@ -265,16 +267,23 @@ function Presentation() {
         </Container>
 
         <div className="flex m-5">
-          
+
         </div>
 
         <div className="ml-20">
+          <h1 className='mb-8 flex justify-center content-center text-black text-6xl font-bold'>Our Department Of Tech</h1>
           <Flipedimages />
+        </div>
+
+        <div className="mt-20">
+          <Hidden />
         </div>
 
         <Pages />
 
-        <Information />
+        <Miltiimg />
+
+        {/* <Information /> */}
 
         <Download />
 
