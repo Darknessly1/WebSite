@@ -32,7 +32,6 @@ function TransparentBlogCard({ image, title, description, action }) {
   const cardActionStyles = {
     display: "flex",
     alignItems: "center",
-    width: "max-content",
 
     "& .material-icons, .material-icons-round,": {
       transform: `translateX(2px)`,
@@ -40,9 +39,9 @@ function TransparentBlogCard({ image, title, description, action }) {
     },
 
     "&:hover .material-icons, &:focus .material-icons, &:hover .material-icons-round, &:focus .material-icons-round":
-      {
-        transform: `translateX(6px)`,
-      },
+    {
+      transform: `translateX(6px)`,
+    },
   };
 
   const imageTemplate = (
@@ -51,7 +50,7 @@ function TransparentBlogCard({ image, title, description, action }) {
         component="img"
         src={image}
         alt={title}
-        borderRadius="lg"
+        borderRadius="md"
         shadow="md"
         width="100%"
         position="relative"
@@ -81,6 +80,11 @@ function TransparentBlogCard({ image, title, description, action }) {
         background: "transparent",
         boxShadow: "none",
         overflow: "visible",
+        width:"30%",
+        border: 2,
+        padding: 2,
+        margin: 3,
+        borderColor: 'gray'
       }}
     >
       {action.type === "internal" ? (

@@ -1,39 +1,26 @@
-
-// @mui material components
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Card from "@mui/material/Card";
 
-// Material Kit 2 React components
 import MKBox from "components/MKBox";
-// import MKTypography from "components/MKTypography";
-// import MKSocialButton from "components/MKSocialButton";
 
-// Material Kit 2 React examples
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 import DefaultFooter from "examples/Footers/DefaultFooter";
 import FilledInfoCard from "examples/Cards/InfoCards/FilledInfoCard";
 
-// Presentation page sections
-// import Counters from "pages/Presentation/sections/Counters";
 import Information from "pages/Presentation/sections/Information";
 import DesignBlocks from "pages/Presentation/sections/DesignBlocks";
 import Pages from "pages/Presentation/sections/Pages";
 import Testimonials from "pages/Presentation/sections/Testimonials";
 import Download from "pages/Presentation/sections/Download";
 
-// Presentation page components
 import BuiltByDevelopers from "pages/Presentation/components/BuiltByDevelopers";
 
-// Routes
 import routes from "routes";
 import footerRoutes from "footer.routes";
 
-// Images
 import bgImage from "assets/bgimg2.jpg";
 import ImageSlider from "components/ImageGallery";
-
-
 import image1 from "assets/images/examples/blog2.jpg";
 import image2 from "assets/images/examples/blog-9-4.jpg";
 import image3 from "assets/images/examples/testimonial-6-2.jpg";
@@ -43,12 +30,8 @@ import image6 from "assets/images/bg-presentation.jpg";
 import image7 from "assets/images/bg2.jpg";
 import image8 from "assets/images/bg3.jpg";
 import image9 from "assets/images/team-2.jpg";
-// import image10 from "assets/images/macbook.png";
 import Blogsfile from "components/Blogsfile";
-// import HorizontalTeamCard from "examples/Cards/TeamCards/HorizontalTeamCard";
-// import BackgroundBlogCard from "examples/Cards/BlogCards/BackgroundBlogCard";
-// import CenteredBlogCard from "examples/Cards/BlogCards/CenteredBlogCard";
-// import ImageSlider from "components/ImageGallery";
+
 
 import ArticleIcon from '@mui/icons-material/Article';
 import TerminalIcon from '@mui/icons-material/Terminal';
@@ -56,6 +39,10 @@ import ComputerIcon from '@mui/icons-material/Computer';
 import MouseIcon from '@mui/icons-material/Mouse';
 import LanIcon from '@mui/icons-material/Lan';
 import { Link } from 'react-router-dom';
+import MKSocialButton from "components/MKSocialButton";
+import MKTypography from "components/MKTypography";
+// import TransparentBlogCard from "examples/Cards/BlogCards/TransparentBlogCard";
+import Flipedimages from "components/Flipedimages";
 
 function Presentation() {
 
@@ -273,13 +260,24 @@ function Presentation() {
           boxShadow: ({ boxShadows: { xxl } }) => xxl,
         }}
       >
-        <Container sx={{ mt: 6 }}>
+        <Container sx={{ mt: 10 }}>
           <BuiltByDevelopers />
         </Container>
+
+        <div className="flex m-5">
+          
+        </div>
+
+        <div className="ml-20">
+          <Flipedimages />
+        </div>
+
         <Pages />
 
         <Information />
+
         <Download />
+
         <DesignBlocks />
 
         <Container>
@@ -326,8 +324,12 @@ function Presentation() {
             </Grid>
           </Grid>
         </Container>
+
+
         <Testimonials />
-        {/* <MKBox pt={18} pb={6}>
+
+
+        <MKBox pt={18} pb={6}>
           <Container>
             <Grid container spacing={3}>
               <Grid item xs={12} lg={5} ml="auto" sx={{ textAlign: { xs: "center", lg: "left" } }}>
@@ -378,7 +380,7 @@ function Presentation() {
               </Grid>
             </Grid>
           </Container>
-        </MKBox> */}
+        </MKBox>
       </Card>
       <MKBox pt={6} px={1} mt={6}>
         <DefaultFooter content={footerRoutes} />
