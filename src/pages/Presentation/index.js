@@ -262,16 +262,26 @@ function Presentation() {
           boxShadow: ({ boxShadows: { xxl } }) => xxl,
         }}
       >
-        <Container sx={{ mt: 10 }}>
-          <BuiltByDevelopers />
-        </Container>
+        
 
         <div className="flex m-5">
 
         </div>
 
         <div className="ml-20">
-          <h1 className='mb-8 flex justify-center content-center text-black text-6xl font-bold'>Our Department Of Tech</h1>
+          <h1 className='mb-8 flex justify-center content-center text-black text-6xl font-bold'>
+            <h1 className='text-black text-6xl font-bold mb-12'>
+              <div className="flex items-center justify-center ">
+                <span className="absolute mx-auto py-4 flex border w-fit bg-gradient-to-r blur-xl from-blue-500 via-teal-500 to-pink-500 bg-clip-text text-6xl box-content font-extrabold text-transparent text-center select-none">
+                  Our Services Our Services Our Services
+                </span>
+                <h1
+                  className="relative top-0 w-fit h-auto py-4 justify-center flex bg-gradient-to-r items-center from-blue-500 via-sky-500 to-green-500 bg-clip-text text-6xl font-extrabold text-transparent text-center select-auto">
+                  Our Services
+                </h1>
+              </div>
+            </h1>
+          </h1>
           <Flipedimages />
         </div>
 
@@ -336,6 +346,10 @@ function Presentation() {
 
 
         <Testimonials />
+
+        <Container sx={{ mt: 10 }}>
+          <BuiltByDevelopers />
+        </Container>
 
 
         <MKBox pt={18} pb={6}>

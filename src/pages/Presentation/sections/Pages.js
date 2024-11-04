@@ -1,18 +1,3 @@
-/*
-=========================================================
-* Material Kit 2 React - v2.1.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-react
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
-
-Coded by www.creative-tim.com
-
- =========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
-
 // react-router-dom components
 import { Link } from "react-router-dom";
 
@@ -22,7 +7,6 @@ import Grid from "@mui/material/Grid";
 
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
-import MKBadge from "components/MKBadge";
 import MKTypography from "components/MKTypography";
 
 // Presentation page components
@@ -52,20 +36,23 @@ function Pages() {
           alignItems="center"
           sx={{ textAlign: "center", my: 6, mx: "auto", px: 0.75 }}
         >
-          <MKBadge
-            variant="contained"
-            color="dark"
-            badgeContent="discover our services"
-            container
-            sx={{ mb: 2 }}
-          />
-          <MKTypography variant="h2" fontWeight="bold">
-            With Our Sufficient Services
-          </MKTypography>
-          <MKTypography variant="body1" color="text">
-            The easiest way to get started is to use one of our
-            <br /> pre-built example pages.
-          </MKTypography>
+          <div className="max-w-3xl mx-auto text-center mt-16">
+            <h1 className="text-6xl font-bold text-gray-900 leading-tight mb-2 border-t-4 border-b-4 border-gray-500 py-4">
+              <h1 className='mb-8 flex justify-center content-center text-black text-6xl font-bold'>
+                <h1 className='text-black text-6xl font-bold'>
+                  <div className="flex items-center justify-center ">
+                    <span className="absolute mx-auto py-4 flex border w-fit bg-gradient-to-r blur-xl from-black via-gray-300 to-black bg-clip-text text-6xl box-content font-extrabold text-transparent text-center select-none">
+                      Our Services Our Services Our Services
+                    </span>
+                    <h1
+                      className="relative top-0 w-fit h-auto py-4 justify-center flex bg-gradient-to-r items-center from-black via-gray-500 to-gray-200 bg-clip-text text-6xl font-extrabold text-transparent text-center select-auto">
+                      Our Pages to Explore
+                    </h1>
+                  </div>
+                </h1>
+              </h1>
+            </h1>
+          </div>
         </Grid>
       </Container>
       <Container sx={{ mt: { xs: 2, lg: 5 } }}>
