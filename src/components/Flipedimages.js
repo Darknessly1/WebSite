@@ -1,7 +1,12 @@
-import test1 from '../assets/test1.jpg';
-import test2 from '../assets/test2.jpg';
-import test3 from '../assets/test3.jpg';
-import test4 from '../assets/test4.jpg';
+// import test1 from '../assets/test1.jpg';
+// import test2 from '../assets/test2.jpg';
+// import test3 from '../assets/test3.jpg';
+// import test4 from '../assets/test4.jpg';
+
+import imgtest1 from 'assets/imgtest1.jpg'
+import imgtest2 from 'assets/imgtest2.jpg'
+import imgtest3 from 'assets/imgtest3.jpg'
+import imgtest4 from 'assets/imgtest4.jpg'
 
 
 export default function Flipedimages() {
@@ -14,7 +19,7 @@ export default function Flipedimages() {
                     <div className="relative flex flex-col items-start m-1 transition ease-in-out duration-500 delay-150 transform  md:w-80 md:-ml-26 md:hover:-translate-x-32 md:hover:-translate-y-8 shrink-0 ">
                         <article className="mx-auto rounded-3xl overflow-hidden  bg-cover ring-2 ring-inset ring-white/50 bg-center min-h-150 relative   transform duration-500   group"
                             style={{
-                                backgroundImage: `url(${test1})`
+                                backgroundImage: `url(${imgtest1})`
                             }}
                         >
                             <div className="relative h-full  group-hover:bg-opacity-0 min-h-150  flex flex-wrap flex-col pt-[30rem]  transform duration-500">
@@ -28,7 +33,7 @@ export default function Flipedimages() {
                     <div className="relative flex flex-col items-start m-1 transition  ease-in-out duration-500  delay-150 transform  md:w-80 md:-ml-32 md:hover:-translate-x-32 md:hover:-translate-y-8 shrink-0 ">
                         <article className="mx-auto   rounded-3xl overflow-hidden  bg-cover ring-2 ring-inset ring-white/50 bg-center min-h-150 relative   transform duration-500   group"
                             style={{
-                                backgroundImage: `url(${test2})`
+                                backgroundImage: `url(${imgtest2})`
                             }}
                         >
                             <div className="relative h-full  group-hover:bg-opacity-0 min-h-150  flex flex-wrap flex-col pt-[30rem]  transform duration-500">
@@ -42,7 +47,7 @@ export default function Flipedimages() {
                     <div className="relative flex flex-col items-start m-1 transition  ease-in-out duration-500  delay-150 transform  md:w-80 md:-ml-32 md:hover:-translate-x-32 md:hover:-translate-y-8 shrink-0 ">
                         <article className="mx-auto   rounded-3xl overflow-hidden  bg-cover ring-2 ring-inset ring-white/50 bg-center min-h-150 relative   transform duration-500   group"
                             style={{
-                                backgroundImage: `url(${test3})`
+                                backgroundImage: `url(${imgtest3})`
                             }}
                         >
                             <div className=" relative h-full  group-hover:bg-opacity-0 min-h-150  flex flex-wrap flex-col pt-[30rem]  transform duration-500">
@@ -56,7 +61,7 @@ export default function Flipedimages() {
                     <div className="relative flex flex-col items-start m-1 transition  ease-in-out duration-500  delay-150 transform  md:w-80 md:-ml-32 md:hover:-translate-x-32 md:hover:-translate-y-8 shrink-0 ">
                         <article className="mx-auto   rounded-3xl overflow-hidden  bg-cover ring-2 ring-inset ring-white/50 bg-center min-h-150 relative   transform duration-500   group"
                             style={{
-                                backgroundImage: `url(${test4})`
+                                backgroundImage: `url(${imgtest4})`
                             }}
                         >
                             <div className=" relative h-full  group-hover:bg-opacity-0 min-h-150  flex flex-wrap flex-col pt-[30rem]  transform duration-500">

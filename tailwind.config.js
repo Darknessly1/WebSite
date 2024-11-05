@@ -3,6 +3,9 @@ module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}", 
   ],
+  options: {
+    safelist: ['text-stroke'], // Prevent this class from being purged
+  },
   theme: {
     extend: {
       fontFamily: {
