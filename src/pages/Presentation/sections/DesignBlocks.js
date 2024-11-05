@@ -22,7 +22,7 @@ import Grid from "@mui/material/Grid";
 
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
-import MKBadge from "components/MKBadge";
+// import MKBadge from "components/MKBadge";
 import MKTypography from "components/MKTypography";
 
 // Presentation page components
@@ -68,22 +68,25 @@ function DesignBlocks() {
           lg={6}
           flexDirection="column"
           alignItems="center"
-          sx={{ textAlign: "center", my: 6, mx: "auto", px: 0.75 }}
+          sx={{ textAlign: "center", mx: "auto"}}
         >
-          <MKBadge
-            variant="contained"
-            color="dark"
-            badgeContent="Infinite combinations"
-            container
-            sx={{ mb: 2 }}
-          />
-          <MKTypography variant="h2" fontWeight="bold">
-            Huge collection of sections
-          </MKTypography>
-          <MKTypography variant="body1" color="text">
-            We have created multiple options for you to put together and customise into pixel
-            perfect pages.
-          </MKTypography>
+          <div className="max-w-3xl mx-auto text-center">
+            <h1 className="text-6xl font-bold text-gray-900 leading-tight mb-2 border-t-4 border-b-4 border-gray-500 py-2">
+              <h1 className='mb-8 flex justify-center content-center text-black text-6xl font-bold'>
+                <h1 className='text-black text-6xl font-bold'>
+                  <div className="flex items-center justify-center">
+                    <span className="absolute mx-auto py-4 flex border w-fit bg-gradient-to-r blur-xl from-black via-gray-300 to-black bg-clip-text text-8xl box-content font-extrabold text-transparent text-center select-none">
+                      Our Services Our Services Our Services
+                    </span>
+                    <h1
+                      className="relative top-0 w-fit h-auto py-6 justify-center flex bg-gradient-to-r items-center from-black via-gray-600 to-gray-400 bg-clip-text text-6xl font-extrabold text-transparent text-center select-auto">
+                      Project Out Team build
+                    </h1>
+                  </div>
+                </h1>
+              </h1>
+            </h1>
+          </div>
         </Grid>
       </Container>
       <Container sx={{ mt: 6 }}>{renderData}</Container>

@@ -8,7 +8,7 @@ function TestButton({ icon, text }) {
     <Stack direction="row" spacing={2}>
       <Button
         variant="outlined"
-        startIcon={icon} // Use the icon prop here
+        startIcon={icon}
         sx={{
           color: "white",
           borderColor: "#212121",
@@ -20,7 +20,7 @@ function TestButton({ icon, text }) {
           },
         }}
       >
-        {text} {/* Use the text prop here */}
+        {text}
       </Button>
     </Stack>
   );
