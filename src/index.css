@@ -12,3 +12,10 @@
     margin-top: 10px;
     margin: 100px;
 }
+
+.hero {
+    background-image: url('assets/imgtest10.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3;
+}

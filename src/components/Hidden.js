@@ -26,7 +26,7 @@ export default function Hidden() {
 
     return (
         <section className="text-center">
-            <h1 className='text-black text-6xl font-bold mb-12'>
+            <div className='text-black text-6xl font-bold mb-12'>
                 <div className="flex items-center justify-center ">
                     <span className="absolute mx-auto py-4 flex border w-fit bg-gradient-to-r blur-xl from-blue-500 via-teal-500 to-gray-500 bg-clip-text text-6xl box-content font-extrabold text-transparent text-center select-none">
                         This is example of glowing text
@@ -36,7 +36,7 @@ export default function Hidden() {
                         Licences For Salle
                     </h1>
                 </div>
-            </h1>
+            </div>
             <div className="flex justify-between items-center max-w-5xl mx-auto space-x-4">
                 <button onClick={handlePrev} className="text-3xl">&#8592;</button>
 

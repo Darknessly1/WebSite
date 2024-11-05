@@ -37,8 +37,8 @@ function Pages() {
           sx={{ textAlign: "center", my: 6, mx: "auto", px: 0.75 }}
         >
           <div className="max-w-3xl mx-auto text-center mt-16">
-            <h1 className="text-6xl font-bold text-gray-900 leading-tight mb-2 border-t-4 border-b-4 border-gray-500 py-4">
-              <h1 className='mb-8 flex justify-center content-center text-black text-6xl font-bold'>
+            <div className="text-6xl font-bold text-gray-900 leading-tight mb-2 border-t-4 border-b-4 border-gray-500 py-4">
+              <div className='mb-8 flex justify-center content-center text-black text-6xl font-bold'>
                 <h1 className='text-black text-6xl font-bold'>
                   <div className="flex items-center justify-center ">
                     <span className="absolute mx-auto py-4 flex border w-fit bg-gradient-to-r blur-xl from-black via-gray-300 to-black bg-clip-text text-6xl box-content font-extrabold text-transparent text-center select-none">
@@ -50,8 +50,8 @@ function Pages() {
                     </h1>
                   </div>
                 </h1>
-              </h1>
-            </h1>
+              </div>
+            </div>
           </div>
         </Grid>
       </Container>

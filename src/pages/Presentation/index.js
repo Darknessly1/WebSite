@@ -12,12 +12,11 @@ import Pages from "pages/Presentation/sections/Pages";
 import routes from "routes";
 import footerRoutes from "footer.routes";
 
-// import bgImage from "assets/bgimg2.jpg";
 import Flipedimages from "components/Flipedimages";
 import Hidden from "components/Hidden";
 import Miltiimg from "components/Miltiimg";
 
-import imgtest1 from "assets/imgtest1.jpg";
+import imgtest11 from "assets/imgtest11.jpg";
 
 function Presentation() {
 
@@ -36,12 +35,12 @@ function Presentation() {
       />
       <MKBox
         minHeight="120vh"
-        width="100%"
+        // width="100%"
         style={{
-          backgroundImage: `url(${imgtest1})`,
+          backgroundImage: `url(${imgtest11})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          
+
         }}
       >
         <Container>
@@ -65,20 +64,6 @@ function Presentation() {
                         className="inline-flex items-center px-6 py-4 mt-8 font-semibold text-white bg-black rounded-full transition-all duration-200 hover:bg-white hover:text-black focus:bg-yellow-400 lg:mt-16"
                       >
                         Discover more
-                        <svg
-                          className="w-6 h-6 ml-8 -mr-2"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="1.5"
-                            d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"
-                          />
-                        </svg>
                       </a>
 
                       <p className="mt-5 text-white">
@@ -95,7 +80,6 @@ function Presentation() {
                 </div>
               </section>
             </div>
-
           </Grid>
         </Container>
       </MKBox>
@@ -115,20 +99,21 @@ function Presentation() {
 
         </div>
 
+        <div className='mb-8 flex justify-center content-center text-black text-6xl font-bold'>
+          <span className='text-black text-6xl font-bold mb-12'>
+            <div className="flex items-center justify-center ">
+              <span className="absolute mx-auto py-4 flex border w-fit bg-gradient-to-r blur-xl from-blue-500 via-teal-500 to-gray-500 bg-clip-text text-6xl box-content font-extrabold text-transparent text-center select-none">
+                Our Services
+              </span>
+              <h1
+                className="relative top-0 w-fit h-auto py-4 justify-center flex bg-gradient-to-r items-center from-green-500 via-green-700 to-green-500 bg-clip-text text-6xl font-extrabold text-transparent text-center select-auto">
+                Our Services
+              </h1>
+            </div>
+          </span>
+        </div>
+
         <div className="ml-20">
-          <h1 className='mb-8 flex justify-center content-center text-black text-6xl font-bold'>
-            <h1 className='text-black text-6xl font-bold mb-12'>
-              <div className="flex items-center justify-center ">
-                <span className="absolute mx-auto py-4 flex border w-fit bg-gradient-to-r blur-xl from-blue-500 via-teal-500 to-gray-500 bg-clip-text text-6xl box-content font-extrabold text-transparent text-center select-none">
-                  Our Services
-                </span>
-                <h1
-                  className="relative top-0 w-fit h-auto py-4 justify-center flex bg-gradient-to-r items-center from-green-500 via-green-700 to-green-500 bg-clip-text text-6xl font-extrabold text-transparent text-center select-auto">
-                  Our Services
-                </h1>
-              </div>
-            </h1>
-          </h1>
           <Flipedimages />
         </div>
 
